@@ -13,7 +13,7 @@ struct t_habr_2014_01_30{
     return !arr[e.x+e.y*n];
   }
   static vec2i turn(const vec2i&v){vec2i tmp={-v.y,+v.x};return tmp;}
-  static string IToS(const int&val){char c[40];sprintf_s(c,"%02i",val);return string(c);}
+  static string IToS(const int&val){char c[40];sprintf(c,"%02i",val);return string(c);}
   static string main(int n){
     vector<int> arr(n*n);
     vec2i pos={0,0}; vec2i dv={1,0};
